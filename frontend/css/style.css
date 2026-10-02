@@ -1,0 +1,70 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.food {
+    background-color: #d1e7dd;
+    color: #146c43;
+}
+
+.transport {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.bills {
+    background-color: #fff3cd;
+    color: #997404;
+}
+
+.entertainment {
+    background-color: #e2d9f3;
+    color: #59359a;
+}
+
+.other {
+    background-color: #e2e3e5;
+    color: #41464b;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .summary-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .summary-cards .card-body {
+        padding: 10px 5px;
+    }
+
+    .summary-cards .card-title {
+        font-size: 12px;
+    }
+
+    .summary-cards h3 {
+        font-size: 16px;
+    }
+}
